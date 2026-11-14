@@ -53,20 +53,3 @@ machine-learning/
 pip install -r requirements.txt
 ```
 
-所有训练脚本按 Kaggle Notebook 的路径编写，数据需要挂载到：
-
-```text
-/kaggle/input/competitions/2026task1/dataset-for-task2/dataset-for-task2
-/kaggle/input/competitions/2026task2/fer_data/fer_data
-/kaggle/input/2026task3/detection
-/kaggle/input/competitions/2026task-4/segmentation
-```
-
-如果本机路径不同，请修改各脚本顶部的 `TRAIN_DIR` / `TEST_DIR` / `CFG["data_root"]`。
-
-## 说明
-
-- 代码按课程提交时的 Notebook 内容整理，保留原始训练与推理流程。
-- 报告中的结果分析以可复核的提交文件、版本一致率和执行记录为依据；Kaggle 保存版本未保留逐 epoch 的标准输出，因此报告没有填写无法复核的 F1/RMSE/Dice 分数。
-- 数据文件体积较大，未上传到仓库；请按 `data/README.md` 从 Kaggle 比赛页面挂载。
-- 报告文件位于 `report/`，可直接下载后提交。
